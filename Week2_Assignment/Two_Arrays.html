@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two array contain any comman item</title>
+</head>
+<body>
+    <script>
+        let array1=[1,2,4,5,6,7,8,9,10];
+        let array2=[22,33,55,6,8,7,9,10];
+        function CommanArray(array1,array2){
+            let commonElement=[];
+            for(let i=0; i<array1.length;i++){
+                for(let j=0; j<array2.length;j++){
+                    if(array1[i]==array2[j]){
+                        commonElement.push(array1[i]);
+                        // return true;
+                    }
+                }
+            }
+            return commonElement;
+            // return false;
+        }
+        console.log(CommanArray(array1,array2));
+        document.write(CommanArray(array1,array2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Middle of the Array</title>
+</head>
+<body>
+    <script>
+        let array=[1,2,3,4,5,6];
+        array.splice(3,1);
+        document.write(array);
+        document.write("<br><br>")
+
+        let array2=[2,3,4,5,6,7,8,9];
+        let delete_Middle=Math.floor(array2.length / 2);
+        let newArray=[...array2.slice(0, delete_Middle), ...array2.slice(delete_Middle+1)];
+        document.write(newArray);
+
+      
+// // Input array 
+//     let Arr = [1, 2, 3, 4, 5, 6]; 
+    
+//     // Index of deleting element 
+//     let middleIndex = Math.floor(Arr.length / 2); 
+//     let newArray =  
+//         [...Arr.slice(0, middleIndex), ...Arr.slice(middleIndex + 1)] 
+        
+//     console.log(newArray);
+    </script>
+</body>
+</html>

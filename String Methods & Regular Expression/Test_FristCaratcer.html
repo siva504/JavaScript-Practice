@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test the whether first characters uppercase or not</title>
+</head>
+<body>
+    <script>
+         function isFirstCharUpperCase(str) {
+            return /^[A-Z]/.test(str);
+        }
+
+        let string1 = "Hello";
+        let string2 = "world";
+
+        console.log(isFirstCharUpperCase(string1)); 
+        console.log(isFirstCharUpperCase(string2)); 
+
+    </script>
+</body>
+</html>

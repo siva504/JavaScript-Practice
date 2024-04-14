@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Smallest and Largest Element An array</title>
+</head>
+<body>
+    <script>
+        const unsortedArray = [10, 5, 20, 8, 15];
+        const n = 2;
+
+        const sortedAscending = unsortedArray.slice().sort((a, b) => a - b);
+
+       
+        const sortedDescending = unsortedArray.slice().sort((a, b) => b - a);
+
+        const nthSmallest = sortedAscending[n - 1];
+        document.write(`${n}th Smallest Element:`, nthSmallest);
+        document.write("<br><br>")
+        const nthLargest = sortedDescending[n - 1];
+        document.write(`${n}th Largest Element:`, nthLargest);
+
+    </script>
+</body>
+</html>

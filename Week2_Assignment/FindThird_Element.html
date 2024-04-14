@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third largest Element</title>
+</head>
+<body>
+    <script>
+         const array = [101, 5, 20, 80, -151]; 
+         if(array.length<3){
+            document.write("Invaild array");
+         }
+         else{
+            let largest = 0;
+            let secondLargest = 0;
+            let thirdLargest=0;
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] > largest) {
+                    thirdLargest = secondLargest;
+                    secondLargest = largest;
+                    largest = array[i];
+                } else if (array[i] > secondLargest && array[i] !== largest) {
+                    thirdLargest = secondLargest;
+                    secondLargest = array[i];
+                } else if (array[i] > thirdLargest && array[i] !== secondLargest && array[i] !== largest) {
+                    thirdLargest = array[i];
+                }
+            }
+
+            document.write("Third Largest Element:", thirdLargest);
+         }
+
+    </script>
+</body>
+</html>

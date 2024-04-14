@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Array Objects</title>
+</head>
+<body>
+    
+    <script>
+        let arr=[1,23,445,]
+        let person=[[
+            {
+                name:'siva',
+                age:24,
+            },
+            {
+                name:'satya',
+                age:23
+            }],
+            [
+                {
+                    name:'veera',
+                    age:25,
+                },
+                {
+                    name:'venkata',
+                    age:24
+                }
+            ]
+
+        ]
+        let updatedArrayName=person[0].splice(1,1);
+        console.log(updatedArrayName);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print odd numbers using Promises</title>
+</head>
+<body>
+    <script>
+    function printOddNumbers(arr) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        const oddNumbers = arr.filter(num => num % 2 !== 0);
+        resolve(oddNumbers);
+        }, 1000); 
+    });
+    }
+
+    const numbersArray = [22,1,2,3,344,552,87,3];
+
+    printOddNumbers(numbersArray)
+    .then(oddNumbers => {
+        document.write("Odd numbers:", oddNumbers);
+        document.write("<br><br>")
+    })
+    .catch(error => {
+        document.write("Error:", error);
+    })
+    .finally(() =>{
+        document.write("Finally excueted");
+    })
+
+    </script>
+</body>
+</html>

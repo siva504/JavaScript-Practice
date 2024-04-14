@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert String With Another String</title>
+</head>
+<body>
+    <script>
+        let originalString = "The quick brown fox jumps over the lazy dog.";
+        let stringToInsert = "very ";
+        let position = 10;
+        let modifiedString = originalString.slice(0, position) + stringToInsert + originalString.slice(position);
+
+        console.log(modifiedString);
+
+    </script>
+</body>
+</html>

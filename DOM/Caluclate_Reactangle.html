@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the area of the reactangle</title>
+</head>
+<body>
+    <label for="Length">Length:</label>
+    <input type="text" id="length" />
+    <br><br>
+    <label for="Width">Width:</label>
+    <input type="text" id="width" />
+    <br><br>
+    <button onclick="calculateArea()">Calculate Area</button>
+    <br><br>
+    <p id="result"></p>
+    <script>
+        function calculateArea() {
+            var length = document.getElementById("length").value;
+            var width = document.getElementById("width").value;
+
+            if (length.trim() === "" || width.trim() === "") {
+                alert("Please enter values for length and width.");
+                return;
+            }
+            if (isNaN(length) || isNaN(width)) {
+                alert("Please enter valid numbers for length and width.");
+                return;
+            }
+            var area = length * width;
+            document.getElementById("result").innerText = "Area: " + area;
+        }
+    </script>
+</body>
+</html>

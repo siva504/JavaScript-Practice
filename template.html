@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Cost</title>
+</head>
+<body>
+    <p id="demo" onclick="Template_Cost()">Template_Cost</p>
+    <script>
+        debugger;
+        function Template_Cost(){
+            debugger;
+            const apple = 5.25;
+            const mango = 2.50;
+            const Total = apple + mango;
+            debugger;
+            const message = `Total Cost: $${Total.toFixed(2)}`;
+            alert(message);
+            document.getElementById("demo").textContent = message;
+        }
+        Template_Cost()
+    </script>
+</body>
+</html>

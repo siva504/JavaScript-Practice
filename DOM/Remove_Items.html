@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove the items form drop-down list</title>
+</head>
+<body>
+    <select id="Remove_Item">
+        <option>Html</option>
+        <option>Css</option>
+        <option>JavaScript</option>
+        <option>ReactJs</option>
+        <option>AngularJs</option>
+    </select>
+    <br><br>
+    <button onclick="removeItem()">Remove Item</button>
+    <script>
+        function removeItem() {
+            var dropdown = document.getElementById("Remove_Item");
+            dropdown.remove(dropdown.selectedIndex);
+        }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the valuw of the  href and change the value</title>
+</head>
+<body>
+    <a id="myLink" href="https://siva504.github.io/resume/">Click me</a>
+    <br>
+    <button onclick="changeHref()">Change Href</button>
+    <script>
+        function changeHref(){
+            var link = document.getElementById("myLink");
+            var newHref = "https://bold.pro/my/siva-akula"; 
+            link.href = newHref; 
+        }
+    </script> 
+</body>
+</html>

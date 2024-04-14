@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Funtions</title>
+</head>
+<body>
+    <script>
+        var c=20;
+        var d=20;
+        function add(){
+            var a=10;
+            var b=20;
+            function sub(){
+                console.log(a-b);
+            }
+            sub();
+            console.log(c+d);
+
+        }
+        add();
+    </script>
+</body>
+</html>

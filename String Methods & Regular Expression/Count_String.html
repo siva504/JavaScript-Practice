@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count the SubString Value</title>
+</head>
+<body>
+    <script>
+        function countSubstrings(mainString, substring) {
+            if (mainString.length === 0 || substring.length === 0) {
+                return 0;
+            }
+            let count = 0;
+            let startIndex = 0;
+            while ((startIndex = mainString.indexOf(substring, startIndex)) !== -1) {
+                count++;
+                startIndex += substring.length;
+            }
+
+            return count;
+        }
+
+        let mainString = "ababababab";
+        let substring = "ab";
+        console.log(countSubstrings(mainString, substring));
+
+    </script>
+</body>
+</html>

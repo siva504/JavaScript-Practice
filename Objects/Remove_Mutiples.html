@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Multiple Eleements</title>
+</head>
+<body>
+    <script>
+        const values = new Set,
+            data = [['one', 'third'], ['one', 'second', 'fourth'], ['one', 'third']],
+            result = data.map(a => a.filter(v => !values.has(v) && values.add(v)));
+
+        console.log(result);
+    </script>
+</body>
+</html>

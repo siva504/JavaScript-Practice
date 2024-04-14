@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Smallest Element and Largest Element In the Array</title>
+</head>
+<body>
+    <script>
+        const unsortedArray = [10, 5, 20, 8, 15];
+        const sortedAscending = unsortedArray.slice().sort((a, b) => a - b);
+        const sortedDescending = unsortedArray.slice().sort((a, b) => b - a);
+        document.write("Actual Array",sortedAscending,"<br><br>");
+        sortedAscending.shift();
+        document.write("After Deleteing the first Element in the array",sortedAscending,"<br><br>");
+        document.write("Actual Array",sortedDescending,"<br><br>");
+        sortedDescending.pop();
+        document.write("After Deleting the largest Element in the array ",sortedDescending);
+        
+
+    </script>
+</body>
+</html>

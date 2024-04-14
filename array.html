@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Concept</title>
+</head>
+<body>
+    <script>
+        const temp=[27,28,30,55,78];
+        let name="sivasatyaveera";
+        let updatedFrom=Array.from(name);
+        console.log(updatedFrom);
+
+        let names=new Array('siva',22,'satya');
+        console.log(names);
+
+        let char=Array.from("ABCDEF");
+        console.log(char);
+    
+        let someOver18=temp.some(myFun);
+        function myFun(value){
+            return  value>77;
+        }
+        console.log(someOver18);
+
+        let everOver=temp.every(myFunc);
+        function myFunc(value){
+            return value>80;
+        }
+        console.log(everOver);
+
+        
+
+        // function add(t){
+        //     console.log(t);
+        // }
+        // function Total(a,b,callback){
+        //     let  total;
+        //     total=a+b;
+        //     callback(total);
+        // }
+        // console.log(Total(3,4,add));
+
+        // debugger;
+        // let fruits=["apple", "mango","banana",55,66];
+        // console.log(fruits);
+        // let updatedFruits=fruits.toString();
+        // console.log(updatedFruits);
+
+        // fruits.push("eye","hand");
+        // console.log(fruits);
+        // fruits.pop('apple');
+        // console.log(fruits)
+        // let x=fruits.slice();
+        // console.log(x);
+        // console.log(fruits.length);
+        // console.log(fruits.sort());
+        // fruits.splice(1,0,'legs','noise');
+        // console.log(fruits);
+        // fruits.splice(0);
+        // console.log(fruits);
+        // fruits.splice(1,0,'Mango');
+        // console.log(fruits);
+        // let result = fruits.join();
+        // console.log(result);
+
+        // let sliceFruits=fruits.slice(,4);
+        // console.log(sliceFruits);
+    //     let sliceFruits= fruits.slice(-3,-2);
+    //     console.log(sliceFruits)
+    //     let newFruits=fruits.slice(4,5);
+    //     console.log(newFruits);
+
+    //     let animals=["cat","dog","bull","Lion","tiger"];
+    //     // let index=animals.index(1);
+    //     // console.log(index);
+    //     let include=animals.includes("Lion");
+    //     console.log(include);
+    //     let indexof=animals.indexOf("Lion");
+    //     console.log(indexof);
+
+    //    let numbers=[1,4,2,3,4,2,5,6,7,8,9,9];
+    //    console.log(numbers);
+    //    let afterSorted=numbers.sort();
+    //    console.log(afterSorted);
+    //    let removeDuplicates= [...new Set(numbers)];
+    //    console.log(removeDuplicates);
+       
+    //    for(let number in removeDuplicates){
+    //     console.log(number);
+    //     document.write(number);
+    //    }
+
+    // let animals=["cat","dog","bull","Lion","tiger"];
+    // console.log(animals);
+    // let updatedAnimals=animals.push("Tiger");
+    // console.log(animals);
+    // animals[animals.length]="Leo";
+    // console.log(animals);
+    // let ats=animals.at(2);
+    // document.write(ats);
+    // let joins=animals.join();
+    // console.log(joins);
+    // let pops=animals.pop();
+    // console.log(pops);
+    // console.log(animals);
+    // add=(a,b)=>{
+    //     return a+b;
+    // }
+    // console.log(add(3,5));
+    // let arr=["Leo","Cat","Lion","Tiger"];
+    // console.log(arr.indexOf("Cat"));
+    // console.log(arr.includes("Leo"));
+    // console.log(arr.sort());
+    // const arrays=["Bike", "Car"];
+    // console.log(arrays);
+    // const updatedArrays=arrays.push("JCB")
+    // console.log(updatedArrays);
+    // const updatedArray=arrays.pop()
+    // console.log(updatedArray);
+    // console.log(arrays);
+    </script>
+</body>
+</html>

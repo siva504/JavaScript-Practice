@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount the Children based on age</title>
+</head>
+<body>
+    <p id="demo" onclick="Discount()"></p>
+    <script>
+        function Discount(){
+        let age = 80; 
+        let isHoliday = false; 
+        if ((age < 5 || age >= 60) && !isHoliday) {
+            document.getElementById("demo").innerHTML="Eligible for Discount";
+        } else {
+            document.getElementById("demo").innerHTML="No Discount";
+        }
+
+        }
+        Discount()
+    </script>
+</body>
+</html>

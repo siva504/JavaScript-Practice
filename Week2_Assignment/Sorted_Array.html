@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sorted array Into Single sorted Array</title>
+</head>
+<body>
+    <script>
+        let array1 = [11, 2, 31, 44, 55, 32];
+        let array2 = [21, 33, 42, 11, 14, 22];
+        let array3 = [31,32,44,55,66,33,55];
+
+        // Merge the arrays
+        let mergedArray = array1.concat(array2,array3);
+
+        let updatedArray=[...array1,...array2,...array3];
+        updatedArray.sort((a,b) => a-b);
+        console.log(updatedArray);
+
+        // Sort the merged array
+        mergedArray.sort((a, b) => a - b);
+
+        console.log(mergedArray);
+
+    </script>
+</body>
+</html>

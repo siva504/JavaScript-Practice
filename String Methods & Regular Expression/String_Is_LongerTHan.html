@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If The String is longer than Specific Value</title>
+</head>
+<body>
+    <script>
+        function truncateString(str, maxLength) {
+            if (str.length <= maxLength) {
+                return str;
+            } else {
+                return str.slice(0, maxLength) + '...';
+            }
+        }
+        let originalString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        let maxLength = 50;
+        let truncatedString = truncateString(originalString, maxLength);
+        console.log(truncatedString); 
+    </script>
+</body>
+</html>

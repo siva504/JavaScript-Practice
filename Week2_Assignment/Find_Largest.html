@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Element in the array</title>
+</head>
+<body>
+    <script>
+        const array = [10, 5, 20, 8, 15]; 
+        let largest =0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }    
+        }
+        document.write(" Largest Element:", largest);
+    </script>
+</body>
+</html>

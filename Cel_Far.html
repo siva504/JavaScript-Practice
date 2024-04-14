@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter the Celsius" id="celsiusInput" oninput="Cel_Fah()">
+    <p id="demo">Converted Fahrenheit value will be displayed here</p>
+
+    <script>
+        function Cel_Fah(){
+            var celsius = document.getElementById("celsiusInput").value;
+            var fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById("demo").innerHTML = `Converted temperature in Fahrenheit: ${fahrenheit}°F`;
+        }
+    </script>
+</body>
+</html>

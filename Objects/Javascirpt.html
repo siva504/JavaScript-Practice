@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  JavaScript program to get the current date.</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date();
+        let formattedDate = currentDate.toDateString();
+        console.log(formattedDate);
+    </script>
+    <script>
+        function removeElementFromArray(array, elementToRemove) {
+            const index = array.indexOf(elementToRemove);
+            if (index !== -1) {
+                array.splice(index, 1);
+            }
+            return array;
+        }
+
+        const originalArray = [1, 2, 3, 4, 5];
+        const elementToRemove = 3;
+        const modifiedArray = removeElementFromArray(originalArray, elementToRemove);
+        console.log(modifiedArray); 
+
+    </script>
+    <script>
+        let originalArrays = [1, 2, 3, 4, 5];
+
+        let newArray = originalArrays.slice();
+
+        newArray = [];
+
+        console.log("Original Array:", originalArrays);
+        console.log("Emptied Array:", newArray);
+
+    </script>
+
+    <script>
+        function isLessThanOrEqualToZero(num) {
+            return num <= 0;
+        }
+
+        console.log(isLessThanOrEqualToZero(5));  
+        console.log(isLessThanOrEqualToZero(0));  
+        console.log(isLessThanOrEqualToZero(-3)); 
+
+    </script>
+    <script>
+        function findLargestNumbers(arrays) {
+            return arrays.map(subArray => Math.max(...subArray));
+        }
+        const arrays = [[3, 7, 2], [9, 5, 1], [4, 6, 8]];
+        console.log(findLargestNumbers(arrays));  
+    </script>
+    <script>
+        function removeCharacter(str, position) {
+            return str.slice(0, position) + str.slice(position + 1);
+        }
+
+        const originalString = "Hello World";
+        const modifiedString = removeCharacter(originalString, 6);
+        console.log(modifiedString); 
+
+    </script>
+    <script>
+        const myColor = ["Red", "Green", "White", "Black"];
+        const joinedString = myColor.join(", ");
+
+        console.log(joinedString); 
+
+    </script>
+    <script>
+        function getFirstElements(array, n = 1) {
+            return array.slice(0, n);
+        }
+
+        const myArray = [1, 2, 3, 4, 5];
+        console.log(getFirstElements(myArray));    
+        console.log(getFirstElements(myArray, 3)); 
+
+    </script>
+    <script>
+        function divideNumbers(x, y) {
+            try {
+                if (y === 0) {
+                    throw "Division by zero is not allowed";
+                }
+                return x / y;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        console.log(divideNumbers(10, 2));    
+        console.log(divideNumbers(10, 0));     
+
+    </script>
+    <script>
+        function isAlphaNumeric(value) {
+            return /^[a-zA-Z0-9]+$/.test(value);
+        }
+
+        console.log(isAlphaNumeric("abc123"));  
+        console.log(isAlphaNumeric("abc123!")); 
+
+    </script>
+    <script>
+        function checkInteger(num) {
+            if (!Number.isInteger(num)) {
+                throw new Error("Input must be an integer.");
+            }
+        }
+
+        try {
+            checkInteger(5);   
+            checkInteger(3.5);
+        } catch (error) {
+            console.error(error.message); 
+        }
+
+    </script>
+    <script>
+        function invokeCallbackAfterDelay(callback) {
+            setTimeout(callback, 2000); 
+        }
+
+        function myCallback() {
+            console.log("Callback function invoked after 2 seconds");
+        }
+
+        invokeCallbackAfterDelay(myCallback);
+
+    </script>
+    <script>
+        const originalStrings = "Welcome to Javascript";
+        const modifiedStrings = originalStrings.slice(0, 5) + originalString.slice(10);
+        console.log(modifiedStrings);
+
+
+    </script>
+</body>
+</html>

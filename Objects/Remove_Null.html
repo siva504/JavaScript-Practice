@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Null Eleements</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            { id: 1, values: [1, 2, 3] },
+            { id: 2, values: [null, 5, 6] },
+            { id: 3, values: [7, 8, 9] },
+            { id: 4, values: [10, null, 12] },
+        ];
+        
+        let output = arr.reduce((acc, obj) => {
+            if (!obj.values.includes(null)) {
+            acc.push({ ...obj });
+            }
+            return acc;
+        }, []);
+        
+        console.log(output);
+        // let arr = ["Apple", "mango", "Apple",
+        //   "orange", "mango", "mango"];
+
+        // let updatedArrays=[...new Set(arr)];
+        // console.log(updatedArrays);
+ 
+        // function deleteDup(arr) {
+        // sorted = [];
+        
+        //     for (var i = 0; i < arr.length; i++) {
+                
+        //             sorted.push(arr[i].toLowerCase());
+        //         };
+        //     return sorted.filter((item,
+        //         index) => sorted.indexOf(item) === index);
+        // }
+        // console.log(deleteDup(arr));
+    </script>
+</body>
+</html>

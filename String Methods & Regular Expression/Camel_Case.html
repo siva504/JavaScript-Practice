@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camel Case Letters</title>
+</head>
+<body>
+    <script>
+        let originalString="welcome to camel case format";
+        let words = originalString.split(/[-_ ]/);
+        for (let i = 1; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+        }
+        let camelCaseString = words.join('');
+        console.log(camelCaseString);
+    </script>
+</body>
+</html>

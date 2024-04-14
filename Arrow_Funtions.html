@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Funtions</title>
+</head>
+<body>
+    <button onclick="Cal(2000)">Tax Cal</button>
+    <p id="demo"></p>
+    <script>
+        // let myFunction=(a,b) =>{
+        //     return a*b;
+        // }
+        // let mutliple = myFunction(50,6);
+        // document.write(mutliple);
+        let Cal=(amount) =>{
+            document.getElementById("demo").innerHTML =amount*0.1;
+            //return amount*0.1;
+        }
+        let mutliple = Cal(2000);
+       // document.write(mutliple);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the word</title>
+</head>
+<body>
+    <script>
+        function findWord(mainString, word) {
+            if (mainString.length === 0 || word.length === 0) {
+                return false;
+            }
+            mainString = mainString.toLowerCase();
+            word = word.toLowerCase();
+
+            return mainString.includes(word);
+        }
+        let mainString = "The quick brown fox jumps over the lazy dog";
+        let wordToFind = "fox";
+        console.log(findWord(mainString, wordToFind)); 
+    </script>
+</body>
+</html>

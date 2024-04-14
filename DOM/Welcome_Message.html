@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome Message</title>
+</head>
+<body>
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username">
+    <button onclick="createWelcomeMessage()">Submit</button>
+    <div id="welcomeMessage"></div>
+
+    <script>
+        function createWelcomeMessage() {
+            var inputField = document.getElementById("username");
+            var username = inputField.value.trim();
+            if (username.length < 3) {
+                alert("Please enter a username with at least 3 characters.");
+                return;
+            }
+            var welcomeMessage = document.getElementById("welcomeMessage");
+            welcomeMessage.textContent = "Welcome, " + username + "!";
+        }
+    </script>
+</body>
+</html>
